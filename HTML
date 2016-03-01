@@ -1,0 +1,640 @@
+<?php
+// Require https
+if ($_SERVER['HTTPS'] != "on") {
+    $url = "https://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+    header("Location: $url");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#009DE0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProHostingBox | Home</title>
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap & Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/block_grid_bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/animate-custom.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slicknav.min.css">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- TOP NAV -->
+  <div class="topmenu">
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="top left">
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <ul class="topright">
+          <li><i class="fa fa-unlock-alt"></i> <a href="#" data-toggle="modal" data-target="#LoginModal">CLIENT AREA</a></li>
+          <li><i class="fa fa-commenting-o"></i> <a href="chat">LIVE CHAT</a></li>
+          <li><i class="fa fa-hand-pointer-o"></i> <a href="affiliates.html">AFFILIATES</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END OF TOP NAV -->
+
+  <!-- HEADER -->
+  <div class="header">
+   <div class="row">
+    <div class="col-sm-3">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-9">
+
+      <nav id="desktop-menu">
+        <ul class="sf-menu" id="navigation">
+          <li class="current"><a href="index.html">Home</a>
+          <li><a href="#">Hosting</a>
+            <ul>
+              <li><a href="shared.html">Shared Hosting</a></li>
+              <li><a href="vps.html">Cloud VPS</a></li>
+              <li><a href="servers.html">Dedicated Servers</a></li>
+              <li><a href="ssl.html">SSL Certificates</a></li>
+            </ul>
+          </li>
+          <li><a href="domains.html">Domains</a></li>
+          <li><a href="#">Info</a>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="datacenter.html">Datacenter</a></li>
+            </ul>
+          </li>
+          <li><a href="http://forum.prohostingbox.com">Forum</a>
+          <li><a href="my.prohostingbox.com/knowledgebase.php">Knowledgebase</a></li>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- END OF HEADER -->
+
+<!-- HEADER BACKGROUND IMAGE -->
+<div id="mainimage">
+
+  <div class="introcaption">
+    <div class="row">
+      <div class="col-sm-12 col-md-11 center-block">
+        <h1>What kind of hosting are you looking for today?<span id="js-rotating">DDoS Protected?, Fully managed?, Secure?, Fully customizable?, 24/7/365 supported?, Enhanced speed?</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICE BOXES -->
+  <div class="pricingbox headerimg">
+   <div class="row">
+    <div class="col-sm-12 col-md-11 center-block">
+      <div class="row">
+        <div class="col-sm-4 verticalbottom">
+          <div class="pricing-plan blue">
+            <div class="pricing-title">VPS</div>
+            <div class="pricing-price"><div class="starting">STARTING AT</div>$10.00<span>/m</span></div>
+            <div class="pricing-features">
+
+              <div class="progressbars">
+                <div class="row">
+                  <div class="col-sm-2"><p>CPU</p></div>
+                  <div class="col-sm-10"><div class="progress red"><span class="meter" style="width:70%"></span></div></div>
+                </div>
+              </div>
+
+              <div class="progressbars">
+                <div class="row">
+                  <div class="col-sm-2"><p>RAM</p></div>
+                  <div class="col-sm-10"><div class="progress red"><span class="meter" style="width:73%"></span></div></div>
+                </div>
+              </div>
+
+              <div class="progressbars">
+                <div class="row">
+                  <div class="col-sm-2"><p>SSD</p></div>
+                  <div class="col-sm-10"><div class="progress red"><span class="meter" style="width:83%"></span></div></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="text-center"><a class="mtr-btn button-raised ripple" href="vps.html">ORDER NOW</a></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="pricing-plan blue">
+            <div class="pricing-title">DEDICATED</div>
+            <div class="pricing-price"><div class="starting">STARTING AT</div>$39.99<span>/m</span></div>
+            <div class="pricing-features">
+              <div class="progressbars">
+                <div class="row">
+                  <div class="col-sm-2"><p>CPU</p></div>
+                  <div class="col-sm-10"><div class="progress purple"><span class="meter" style="width:100%"></span></div></div>
+                </div>
+              </div>
+
+              <div class="progressbars">
+                <div class="row">
+                  <div class="col-sm-2"><p>RAM</p></div>
+                  <div class="col-sm-10"><div class="progress purple"><span class="meter" style="width:100%"></span></div></div>
+                </div>
+              </div>
+
+              <div class="progressbars">
+                <div class="row">
+                  <div class="col-sm-2"><p>SSD</p></div>
+                  <div class="col-sm-10"><div class="progress purple"><span class="meter" style="width:100%"></span></div></div>
+                </div>
+              </div>
+
+              <ul>
+                <li>10 Minutes Deployment</li>
+                <li>Full Root Access</li>
+                <li>No setup fees</li>
+              </ul>
+
+            </div>
+            <div class="text-center"><a class="mtr-btn button-raised ripple" href="vps.html">DEPLOY NOW</a></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4  verticalbottom">
+          <div class="pricing-plan blue">
+            <div class="pricing-title">Dedicated Server</div>
+            <div class="pricing-price"><div class="starting">STARTING AT</div>$45<span>/m</span></div>
+            <div class="pricing-features">
+
+             <div class="progressbars">
+              <div class="row">
+                <div class="col-sm-2"><p>CPU</p></div>
+                <div class="col-sm-10"><div class="progress blue"><span class="meter" style="width:90%"></span></div></div>
+              </div>
+            </div>
+
+            <div class="progressbars">
+              <div class="row">
+                <div class="col-sm-2"><p>RAM</p></div>
+                <div class="col-sm-10"><div class="progress blue"><span class="meter" style="width:95%"></span></div></div>
+              </div>
+            </div>
+
+            <div class="progressbars">
+              <div class="row">
+                <div class="col-sm-2"><p>SSD</p></div>
+                <div class="col-sm-10"><div class="progress blue"><span class="meter" style="width:90%"></span></div></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="text-center"><a class="mtr-btn button-raised ripple" href="shared.html">SIGN UP</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END OF PRICE BOXES -->
+</div>
+</div>
+</div>
+<!-- END OF HEADER BACKGROUND IMAGE -->
+
+<!-- DOMAIN NAME SEARCH BOX -->
+<div class="domainsearch">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 class="text-center">REGISTER YOUR DOMAIN TODAY</h3>
+      <button class="mtr-btn button-circle button-fab ripple" id="showdomainsearch">+</button>
+    </div>
+  </div>
+</div>
+
+<div class="domainform">
+  <div class="row">
+    <div class="col-sm-12">
+     <form action="http://my.prohostingbox.com/domainchecker.php" method="post" class="material">
+       <div class="row">
+        <input type="hidden" name="direct" value="true" />
+        <div class="col-sm-9">
+          <input type="text" name="domain" placeholder="Domain Search">
+        </div>
+        <div class="col-sm-2">
+          <select name="ext" data-placeholder="Extension">
+            <option>.com</option>
+            <option>.net</option>
+            <option>.org</option>
+            <option>.eu</option>
+            <option>.xyz</option>
+          </select>
+        </div>
+        <div class="col-sm-1">
+          <button class="mtr-btn button-fab" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+<!-- END OF DOMAIN NAME SEARCH BOX -->
+
+<!-- FEATURES -->
+<div class="features text-center">
+<div class="spacing-50"></div>
+    <div class="row">
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="circle"><i class="fa fa-rocket"></i></div>
+      <h4>Pro Hosting? You bet!</h4>
+      <p></p>
+    </div>
+<h4>Our Target.</h4>
+      <p>We provide Enterprise grade hardware frequently checked and replaced, to make sure your getting the stable service you & your business deserve. </p>
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+      <div class="circle"><i class="fa fa-gratipay"></i></div>
+      <h4>24/7 customer support</h4>
+      <p>No matter what side the clock is on, at ProHostingBox there will always be someone available to help you.</p>
+    </div>
+
+    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
+      <div class="circle"><i class="fa fa-gg"></i></div>
+      <h4>Best-in-breed scalability</h4>
+      <p>To make sure you get the best-in-breed services we only utilise the best enterprise hardware and the highest level of security.</p>
+    </div>
+
+  </div>
+</div>
+<!-- END OF FEATURES -->
+
+<!-- CALLOUT TEXT / BUTTON -->
+<div class="calltoaction wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="text-center">UP TO 3x FASTER THAN THE COMPETITION<span>DEPLOY A VPS IN MINUTES</span></h2>
+      <div class="text-center"><a class="mtr-btn button-fab ripple" href="vps.html">SIGNUP NOW</a></div>
+    </div>
+  </div>
+</div>
+<!-- END OF CALLOUT TEXT / BUTTON -->
+
+
+<!-- FEATURES -->
+<div class="various">
+  <div class="row">
+
+    <!-- WHY US -->
+    <div class="col-sm-6">
+      <div class="why wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="200ms">
+        <h2>WHY PROHOSTINGBOX?</h2>
+         <div class="titleborder blue">
+<div class="titleborder_left"></div>
+<div class="titleborder_sign"></div>
+</div>
+        <h5>Enterprise security, Enterprise servers</h5>
+        <p>We care about you and your servers that's why you always get a stable level of protection on your services for free, you will always be able to get additional protection at your request!</p>
+        <h5>Fastest 24/7 systems, high performance redundant servers with low pricing. </h5>
+        <p>The services we sell are managed 24/7 by our amazing tech-team, in-case of problems they are ready 24/7 to solve it!</p>
+        <h5>Powered by Intel ®</h5>
+        <p>All of our servers are hosted on Enterprise grade Intel hardware, thats why they are lightning fast, with the Intel cores you don't have to worry about lag or latency issues on your services.</p>
+        <a class="mtr-btn button-blue ripple" href="javascript:void(0)">READ MORE</a>
+      </div>
+    </div>
+    <!-- END OF WHY US -->
+
+    <div class="col-sm-6">
+      <div class="row wow fadeInRight" data-wow-duration="500ms" data-wow-delay="200ms">
+        <div class="col-sm-3 col-md-2"><i class="fa fa-shield"></i></div>
+        <div class="col-sm-9 col-md-10"><h5>DDoS Protection</h5>
+          <p>All our services come with a stable level of DDoS protection of 250 Mbp/s, if you need more you can always buy additional DDoS protection, up to 10 Gbp/s!</p></div>
+        </div>
+        <div class="row wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+          <div class="col-sm-3 col-md-2"><i class="fa fa-dot-circle-o"></i></div>
+          <div class="col-sm-9 col-md-10"><h5>Capabilities</h5>
+            <p>It doesn't matter if you are going to host a blog, e-commerce website or a Game-server, with our services it will always be satisfactory guaranteed, we will always give you the support you require.</p>
+          </div>
+        </div>
+        <div class="row wow fadeInRight" data-wow-duration="500ms" data-wow-delay="400ms">
+          <div class="col-sm-3 col-md-2"><i class="fa fa-code-fork"></i></div>
+          <div class="col-sm-9 col-md-10"><h5>1TB Network Port</h5>
+            <p>With new technology always on the increase we have given every customer a 1000Mbit network port.</p>
+          </div>
+        </div>
+        <div class="row wow fadeInRight" data-wow-duration="500ms" data-wow-delay="500ms">
+          <div class="col-sm-3 col-md-2"><i class="fa fa-compass"></i></div>
+          <div class="col-sm-9 col-md-10"><h5>Load Balancers</h5>
+           <p>Providing up-to date bandwidth graph's so you know exactly what your using is key. When your almost out you can always request more.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- END OF FEATURES -->
+
+ <!-- TESTIMONIALS -->
+ <div class="testimonials">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>WHAT OUR CLIENTS ARE SAYING</h3>
+      <hr class="hr-awesome">
+      <div id="testimonials-carousel" class="owl-carousel">
+
+        <div class="item">
+         <div class="testimonial-content">
+          <img src="images/testimonial1.jpg" alt="" />
+          <p>"It's the perfect solution for our business. It fits our needs perfectly. Your VPS is the most valuable business resource we have EVER purchased."</p>
+          <h5>Cain Gillan, CEO<a href=""></a></h5>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-content">
+          <img src="images/testimonial2.jpg" alt="" />
+          <p>"Without ProHostingBox VPS, we would have gone bankrupt by now. Your VPS is worth much more than I paid. I can't say enough about it"</p>
+          <h5>Alexis McPherson<a href=""></a></h5>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-content">
+          <img src="images/testimonial3.jpg" alt="" />
+          <p>"Thanks to Web hosting, we've just launched our 5th website!"</p>
+          <h5>Yohan Price, Developer at <a href="">Football Blog</a></h5>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-content">
+          <img src="images/testimonial4.jpg" alt="" />
+          <p>"Your SLL certificates was worth a fortune to my company. Most sites sell them for more. We have no regrets! It supports almost all browsers."</p>
+          <h5>Claudio Fuchs, Chairman of <a href="">Wood S.A.</a></h5>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-content">
+          <img src="images/testimonial5.jpg" alt="" />
+          <p>"Nice work on your Dedicated Server. Man, Its getting better and better as I learn more about it. It's incredible."</p>
+          <h5>Roberta Gerrard, CEO<a href=""></a></h5>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-content">
+          <img src="images/testimonial6.jpg" alt="" />
+          <p>"Wow what great service, I love it! It really saves me time and effort. Your Dedicated Server is exactly what our business has been lacking."</p>
+          <h5>Editha T<a href=""></a></h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- END OF TESTIMONIALS -->
+
+<!-- NEW PLANS -->
+<div class="newplans">
+
+  <div class="row">
+   <h3>UNIQUE</h3>
+  <div class="newplans_box"></div>
+   <div class="spacing-25"></div>
+   <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+   <div class="newplanscolumn">
+   <h5>Quite Simple</h5>
+      <p>Choose, configure, deploy and use. Thats how simple it is, no long setup times or annoying setup fee's, no annoying support answers no slow services, Quite simple right?</p>
+      </div>
+    </div>
+
+     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+     <div class="newplanscolumn">
+     <h5>New Features</h5>
+      <ul>
+        <li><i class="fa fa-check"></i> 10TB bandwidth</li>
+        <li><i class="fa fa-check"></i> cPanel now optimized</li>
+        <li><i class="fa fa-check"></i> Extra RAM</li>
+        <li><i class="fa fa-check"></i> Pure SSD cloud servers</li>
+        <li><i class="fa fa-check"></i> High Diskspace</li>
+        <li><i class="fa fa-check"></i> Free Backups</li>
+        <li><i class="fa fa-check"></i> 24/7/365 Ticket, Forum and Email Support</li>
+      </ul>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
+    <div class="newplanscolumn">
+    <h5>Additions to Every Plan</h5>
+      <div class="progressbars">
+        <p>EXTRA CPU</p>
+        <div class="thebar"><p class="percent">80%</p>
+         <div class="progress"><span class="meter" style="width:80%"></span></div>
+       </div>
+
+       <p>EXTRA RAM</p>
+       <div class="thebar"><p class="percent">70%</p>
+         <div class="progress alt-1"><span class="meter" style="width:70%"></span></div>
+       </div>
+
+       <p>EXTRA STORAGE</p>
+       <div class="thebar"><p class="percent">40%</p>
+         <div class="progress alt-2"><span class="meter" style="width:40%"></span></div>
+       </div>
+
+       <p>EXTRA BANDWIDTH</p>
+       <div class="thebar"><p class="percent">95%</p>
+         <div class="progress alt-3"><span class="meter" style="width:95%"></span></div>
+       </div>
+ </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<!-- END O NEW PLANS -->
+
+<!-- PARTNERS -->
+<div class="partners">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="company-partners">
+        <div class="item"><img src="images/logos/1.png" alt=""></div>
+        <div class="item"><img src="images/logos/2.png" alt=""></div>
+        <div class="item"><img src="images/logos/3.png" alt=""></div>
+        <div class="item"><img src="images/logos/4.png" alt=""></div>
+        <div class="item"><img src="images/logos/5.png" alt=""></div>
+        <div class="item"><img src="images/logos/6.png" alt=""></div>
+        <div class="item"><img src="images/logos/7.png" alt=""></div>
+        <div class="item"><img src="images/logos/8.png" alt=""></div>
+        <div class="item"><img src="images/logos/9.png" alt=""></div>
+        <div class="item"><img src="images/logos/1.png" alt=""></div>
+        <div class="item"><img src="images/logos/2.png" alt=""></div>
+        <div class="item"><img src="images/logos/3.png" alt=""></div>
+        <div class="item"><img src="images/logos/4.png" alt=""></div>
+        <div class="item"><img src="images/logos/5.png" alt=""></div>
+        <div class="item"><img src="images/logos/6.png" alt=""></div>
+        <div class="item"><img src="images/logos/7.png" alt=""></div>
+        <div class="item"><img src="images/logos/8.png" alt=""></div>
+        <div class="item"><img src="images/logos/9.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END OF PARTNERS -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="row">
+
+   <div class="col-sm-3">
+    <h4>SERVICES</h4>
+    <ul>
+      <li><a href="shared.html" title="">Shared Hosting</a></li>
+      <li><a href="vps.html" title="">Cloud VPS</a></li>
+      <li><a href="servers.html" title="">Dedicated Servers</a></li>
+      <li><a href="ssl.html" title="">SSL Certificates</a></li>
+    </ul>
+  </div>
+
+  <div class="col-sm-3">
+    <h4>HOSTING FOR APPS</h4>
+
+    <ul>
+      <li><a href="apps.html" title="">WordPress Hosting</a></li>
+      <li><a href="apps.html" title="">Joomla Hosting</a></li>
+      <li><a href="apps.html" title="">Drupal Hosting</a></li>
+      <li><a href="apps.html" title="">Magento Hosting</a></li>
+      <li><a href="apps.html" title="">Prestashop Hosting</a></li>
+    </ul>
+  </div>
+
+  <div class="col-sm-3">
+    <h4>COMPANY</h4>
+
+    <ul>
+      <li><a href="about.html" title="">About Us</a></li>
+      <li><a href="privacy.html" title="">Privacy Policy</a></li>
+      <li><a href="tos.html" title="">Terms & Conditions</a></li>
+    </ul>
+  </div>
+
+  <div class="col-sm-3">
+    <h4>NEWSLETTER SIGNUP</h4>
+    <div id="mc_embed_signup">
+      <form class="form-inline validate material" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+       <input id="mce-EMAIL" type="email" name="EMAIL" placeholder="E-mail" required>
+       <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_b5638e105dac814ad84960d90_9345afa0aa" tabindex="-1" value="">
+      </div>
+      <input type="submit" value="COMING SOON" name="subscribe" id="mc-embedded-subscribe" class="mtr-btn button-blue">
+    </form>
+  </div>
+</div>
+</div>
+</div>
+<!-- END FOOTER -->
+
+<!-- SOCIAL & COPYRIGHT -->
+<div class="social">
+  <div class="row">
+    <div class="col-sm-12">
+     <ul class="social-links">
+      <li><a href="https://twitter.com/prohostingbox" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://facebook.com/prohostingbox" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://instagram/prohostingbox" title="Linkedin"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    <p class="text-center">Copyright© ProHostingBox All rights reserved.</p>
+  </div>
+</div>
+</div>
+<!-- END OF SOCIAL & COPYRIGHT -->
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModal">
+  <div class="modal-dialog" role="document">
+    <form method="post" action="http://my.prohostingbox.com/dologin.php?systpl=prohostingbox" class="material">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"></i>LOGIN TO YOUR ACCOUNT</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="username" placeholder="E-mail Address">
+          <input type="password" name="password" placeholder="Password">
+          <button type="submit" class="mtr-btn button-fab">LOGIN</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- END OF LOGIN MODAL -->
+
+<a href="#top" id="back-to-top" class="ripple"><i class="fa fa-angle-up"></i></a>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/morphext.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/ripple-effect.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  (function($) {
+    "use strict";
+
+    $(window).load(function() {
+   // ______________ WORDS ROTATOR ON HERO
+   $(".introcaption").css({ opacity: "1" });
+   $("#js-rotating").Morphext({
+    animation: "flipInX",
+    separator: ",",
+    speed: 2500
+  });
+ });
+
+    $(document).ready(function() {
+    // ______________ DOMAIN SEARCH SHOW/HIDE
+    $('#showdomainsearch').click(function() {
+      $('.domainform').slideToggle("slow");
+    });
+
+    // ______________ TESTIMONIALS CAROUSEL
+    $("#testimonials-carousel").owlCarousel({
+      items: 3,
+      autoPlay: 5000,
+      itemsDesktop: [1199, 3],
+      itemsDesktopSmall: [979, 2],
+      itemsTablet: [768, 2]
+    });
+
+    $("#company-partners").owlCarousel({
+              autoPlay: 3000, //Set AutoPlay to 3 seconds
+              items: 6,
+              itemsDesktop: [1199, 5],
+              itemsDesktopSmall: [979, 3],
+              itemsTablet: [768, 3],
+              pagination: false
+            });
+
+  });
+
+  })(jQuery);
+</script>
+</body>
+</html>
